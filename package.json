@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "js": "webpack",
+    "js": "webpack --config client/webpack.config.js",
     "watch-js": "webpack --watch",
     "css": "npm-run-all --sequential css-compile css-minify",
     "css-compile": "sass --style expanded --source-map --embed-sources --precision 6 client/src/scss/mailtrain.scss client/dist/mailtrain.css",
